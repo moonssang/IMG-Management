@@ -30,7 +30,7 @@ public class TalkActivity extends AppCompatActivity {
         //데이터를 서버에서 읽어오기
         loadDB();
 
-        listView= findViewById(R.id.listView);
+        listView= findViewById(R.id.listView3);
         talkAdapter= new TalkAdapter(getLayoutInflater(),talkItems);
         listView.setAdapter(talkAdapter);
 

@@ -27,28 +27,44 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="전체 앨범 > 다운로드"
         android:textSize="24sp" />
 
-    <ListView
-        android:id="@+id/listView"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="470dp"
-        android:layout_margin="10dp"
-        android:layout_marginTop="20dp" />
+        android:layout_height="469dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listView3"
+                android:layout_width="match_parent"
+                android:layout_height="470dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/btnFileView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
         android:text="앨범형" />
 
     <Button
         android:id="@+id/btnDown"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="다운로드" />
+
 </LinearLayout>
